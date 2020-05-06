@@ -1,0 +1,9 @@
+config SECURITY_WENHUI
+        bool "wenhui hook placement evaluation module" 
+        depends on SECURITY
+        depends on SECURITYFS
+        default y
+        help
+          This selects the security lsm: wenhui hook placement evaluation module 
+          to be compiled with the kernel.
+          If you are unsure how to answer this question, answer N.
